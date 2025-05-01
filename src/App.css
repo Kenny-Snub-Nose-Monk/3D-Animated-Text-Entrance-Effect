@@ -1,0 +1,47 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  position: relative; /* For absolute positioning of the background image */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  max-width: 50%; /* Limit width to ensure it doesn't obstruct text */
+  object-fit: contain;
+  z-index: -1; /* Place behind text */
+}
+
+.fx-parent {
+  perspective: 800px; /* Enable 3D space for children */
+  margin-bottom: 0.1em;  /* Add some space between lines */
+  /* We need visibility hidden initially to avoid FOUC (Flash Of Unstyled Content) */
+  /* GSAP will handle making letters visible */
+  visibility: hidden;
+}
+
+.fx-parent:last-child {
+  margin-bottom: 0;
+}
+
+.fx-letter {
+  display: inline-block; /* Needed for transforms */
+  white-space: pre-line; /* Preserve spaces if splitting by letter */
+  /* font-size and other text styles can be added here or on .fx-parent */
+  font-size: 3rem; /* Example size, adjust as needed */
+  font-weight: 600;
+  line-height: 0.5;  
+}
+
+/* Ensure quotes are also styled if they are fx-letter */
+.start-quote,
+.end-quote {
+  /* Add specific styles for quotes if needed */
+}
