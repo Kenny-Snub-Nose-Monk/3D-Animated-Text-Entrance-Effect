@@ -1,5 +1,13 @@
 # 3D Animated Text Entrance Effect
 
+
+## 最終效果
+<video width="100%" controls>
+  <source src="./final.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
+
+
 ## 內容與樣式
 - **文字內容**:
   - 第一行: `" Team Taiwan! Team Taiwan!` (注意開頭空格)
