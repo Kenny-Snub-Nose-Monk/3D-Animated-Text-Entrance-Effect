@@ -2,10 +2,8 @@
 
 
 ## 最終效果
-<video width="100%" controls>
-  <source src="./final.mov" type="video/quicktime">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/e53740f6-67c0-4478-bdef-b89519f3feef
+
 
 
 ## 內容與樣式
