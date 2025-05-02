@@ -52,10 +52,10 @@ function App() {
     gsap.set(letters1, {
       opacity: 0,
       rotationX: 90,
-      rotationZ: -30,
+      rotationZ: -15,
       scale: 0.2,
       x: (index) => 30 + index * 1, // Reduced horizontal offset
-      y: startY, // Dynamic start Y for line 1
+      y: startY + 10, 
       transformOrigin: 'center center',
     });
 
@@ -66,7 +66,7 @@ function App() {
       rotationZ: -15,
       scale: 0.2,
       x: (index) => 30 + index * 1, // Reduced horizontal offset
-      y: startY, // Dynamic start Y for line 2
+      y: startY,
       transformOrigin: 'center center',
     });
 
@@ -92,7 +92,7 @@ function App() {
         duration: animationDuration,
         ease: 'expoScale.out', // Ease specifically for rotation
         stagger: animationStagger,
-        delay: 0.5, // Add 0.5 second delay
+        delay: 0.3, // Add 0.5 second delay
     });
 
   }, { scope: container, dependencies: [] }); // Add dependencies array for stability with refs/calculations
